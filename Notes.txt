@@ -1,0 +1,41 @@
+Pytest is a unit testing framework which is developed for only python developers.
+It is a framework. and built in application.
+Pytest is a framework by which we can use certain features in automation.
+
+
+1) Fixtures
+2) Reports
+3) Parallel testing
+4) Skip the tests
+5) Group tests
+6) Batch testing.
+7) Parameterization.
+etc..
+
+Project --> Test suite --> Test cases --> Test Steps
+
+hoe does project structure looks like.
+
+Project --> DIrectory --> Modules(.py)--> class--> Test methods.
+
+Naming conventions:
+-------------------
+1) File names should starting with test_ or ending with _test,as in test_example.py ot ex_test.py
+2) class name should start with "Test" as in TestExample
+3) Test method names should start with "test", as in test_example().
+
+
+Different types of running pytests:
+-----------------------------------
+pytest 
+pytest it will just execute the test case
+
+
+pytest -rA
+It will give you short description of the test methods.
+
+pytest -v -s
+
+-v which will give detailed information about the test.
+-s all the statements will be properly printed.
+ 
