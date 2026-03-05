@@ -38,4 +38,17 @@ pytest -v -s
 
 -v which will give detailed information about the test.
 -s all the statements will be properly printed.
+
+confest files:
+
+By using cofest file we can call multiple files at a time.
+
+
+RUn_specific test method from the module
+
+python -v -s modules\test_login.py::classname::methodname
+
+ex:
+pytest -v -s modules\test_login.py::TestLogin::test_loginbyEmail
+
  
