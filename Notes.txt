@@ -51,4 +51,26 @@ python -v -s modules\test_login.py::classname::methodname
 ex:
 pytest -v -s modules\test_login.py::TestLogin::test_loginbyEmail
 
+
+another set of features in pytest
+-----------------------------------
+1. skip tests
+2. Ordering
+3. dependant test
+4. grouping
+5. parallel testing
+6. parameterization
+etc....
+
+
+Add @pytest.mark.skip
+
+before the method in-order to skip the test.
+
+ordering @pytest.mark.first
+	 @pytest.mark.second
+
+
+@pytest.ini use this file in order to make your own customized fixture
+you have to install pytest-ordering also
  
