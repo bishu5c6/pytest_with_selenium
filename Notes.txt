@@ -45,7 +45,7 @@ By using cofest file we can call multiple files at a time.
 
 
 RUn_specific test method from the module
-
+------------------------------------------
 python -v -s modules\test_login.py::classname::methodname
 
 ex:
@@ -73,4 +73,48 @@ ordering @pytest.mark.first
 
 @pytest.ini use this file in order to make your own customized fixture
 you have to install pytest-ordering also
+
+
+Grouping:
+-------------
+why grouping is needed suppose you have a 20, or 30 test methods and when you want to run
+the apllication you need to run all the methods at a time which is time consuming
+In order to overcame these we will use grouping.
+
+how to run the specific grouping name:
+--------------------------------------
+use the command -m "groupname"
+
+pytest -v -s -m "grouping" file name
+
+suppose you want to use & run two groups at a method
+
+pytest -v -s -m "group1 and group2" file name
+
+pytest -v -s -m "group1 or groyp2" file name
+
+executing which contains only group1
+
+pytest -v -s -m "not regression" file name
+
+Parallel testing
+-----------------
+In pytes the test cases will be executed one after another.
+By using parallel testing we cane execute all at a time.
+here we cane acheive multi browser testing also and parallel testing.
+
+in order to achieve parallel testing you need to install
+
+pip install pytest-xdist
+
+how to run 
+
+pytest -v -s -n=3 
+
+parametrization:
+-----------------
+suppose you want to generate a test scripts for a multiple times you have to uses loop.
+
+with using loop stmts and create a test data for different scripts is called parameterization.
+
  
