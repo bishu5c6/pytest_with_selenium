@@ -118,3 +118,12 @@ suppose you want to generate a test scripts for a multiple times you have to use
 with using loop stmts and create a test data for different scripts is called parameterization.
 
  
+
+what is the fixture method?
+how we can use fixture method in multiple test methods
+how fixture methods returns the data
+how we use fixture data in test methods?
+
+
+
+
