@@ -122,8 +122,35 @@ with using loop stmts and create a test data for different scripts is called par
 what is the fixture method?
 how we can use fixture method in multiple test methods
 how fixture methods returns the data
-how we use fixture data in test methods?
+how we use fixture data in test methods? here data means driver instance
 
 
+use of fixture method:
+we can execute it before every test method.
+
+in the terminal i will use the particular command based on the requirement it will open that
+particular browser.
+
+passing browser through command line arguments.
+
+pytest -rA parameterization_new\command_line.py --browser chrome
+
+if you install playwright-pytest it was not working.
+and
+it is better to install pip install webdriver-manager for browser compatability.
+
+Generating HTML Reports:
+--------------------------
+if you want to create or generate HTML-Reports you need to install.
+
+pytest-html
+
+always use assertion before close statement
+
+by using these
+
+pytest -rA --html=report.html  params_new\test_commandline.py --browser chrome
+
+we can create a html report and it will store inside the current working directory.
 
 
