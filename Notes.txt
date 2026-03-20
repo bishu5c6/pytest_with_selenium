@@ -154,3 +154,40 @@ pytest -rA --html=report.html  params_new\test_commandline.py --browser chrome
 we can create a html report and it will store inside the current working directory.
 
 
+below is an important it is better to know to write the code
+
+It is not a atuomation concept;
+
+It is a pattern:
+
+Page Object Model:
+------------------
+Here we maintain the test cases and page elements in two different files.
+
+every project must maintain these page object model other wise we will get certain challanges and issue.
+
+In Page Object Model:
+for every page we create a test class:
+-------------------------------------
+That class can be called as page object class
+In these class mainly contains two parts:
+1. web elements
+2. actions that we need to perform.
+
+In test case we need to mention test methods:
+-------------------------------------------
+and these can be talk to the page object classes
+
+we can use traditional framework but things will be complicated by using them
+so we prefer to use page object model.
+
+The structure of page object model is as follows:
+----------------------------------------------
+class name:
+
+Locators.
+here mainly we capture the id's
+
+Constructore.
+
+actions.
